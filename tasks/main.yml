@@ -1,0 +1,11 @@
+- name: install zsh
+  apt: pkg=zsh state=present
+  sudo: yes
+
+- name: install oh-my-zsh
+  git: repo=https://github.com/robbyrussell/oh-my-zsh dest=~/.oh-my-zsh
+  sudo: no
+
+- name: switch to ZSH
+  user: name={{ansible_ssh_user}} shell=/usr/bin/zsh
+  sudo: yes
