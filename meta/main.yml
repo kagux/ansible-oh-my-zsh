@@ -3,6 +3,7 @@ galaxy_info:
   author: "Boris Mikhaylov"
   description: 'simple oh-my-zsh installation'
   platforms: []
+  license: MIT
   categories: 
     - system
 dependencies: []
